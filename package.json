@@ -24,6 +24,7 @@
   "homepage": "https://github.com/bhushan354/Leaderboard#readme",
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.0",
+    "babel-eslint": "^10.1.0",
     "css-loader": "^6.8.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -53,5 +54,6 @@
     "setupFiles": [
       "jest-localstorage-mock"
     ]
-  }
+  },
+  "main": "server.js"
 }
