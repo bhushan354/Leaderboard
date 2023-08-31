@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-  <div class="mainContainer">
 
-    <h1 class="heading">Leaderboard</h1>
+    <div class="mainContainer">
 
-    <!-- container for two sections  -->
+        <h1 class="heading">Leaderboard</h1>
 
-    <div class="subContainer">
+        <!-- container for two sections  -->
 
-        <div class="outputDisplay">
+        <div class="subContainer">
+
+            <!-- output outputDisplay -->
+            <div class="outputDisplay">
+
+                <div class="topBar">
+                    <h2>Recent Scores</h2>
+                    <button class="refresh-btn" type="button">Refresh</button>
+                </div>
+
+                <div class="ListDisplay">
+
+                    <div class="topSection">
+                        <li>Name</li>
+                        <li>Scores</li>
+                    </div>
+
+                    <ul id="allScores">
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- form in second block -->
+            <div class="inputContainer">
+                <h3> Add your score</h3>
+
+                <div class="inputScores">
+                    <input required type="text" class="typeName" id="name" name="name" placeholder="Your name"><br>
+                    <input required type="number" class="typeScore" id="score" name="score"
+                        placeholder="Your score"><br>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+
+
+            </div>
 
         </div>
 
-        <div class="inputForm">
 
-        </div>
-        
+
+
     </div>
 
-
-
-
-  </div>
-
 </body>
+
 </html>
