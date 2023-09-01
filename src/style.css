@@ -1,4 +1,123 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.heading {
+  width: 80%;
+  font-size: 45px;
+}
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  background-color: antiquewhite;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px;
+  width: 95%;
+}
+
+li {
+  list-style: none;
+  font-weight: 600;
+}
+
+.topSection {
+  height: 36px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.subContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2vw;
+  height: 40vw;
+  width: 76%;
+}
+
+.inputContainer {
+  height: 85%;
+  width: 25%;
+}
+
+.outputDisplay {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 65%;
+}
+
+.ListDisplay {
+  height: 75%;
+  width: 98%;
+  border-radius: 10px;
+}
+
+ul#scoresList {
+  height: 82%;
+  background-color: darkgrey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button.refresh-btn {
+  height: 100%;
+  padding: 8px;
+  font-size: 14px;
+  background-color: #2e5c5d;
+  font-weight: 800;
+  color: white;
+  border-radius: 4px;
+}
+
+.inputScores {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: 100%;
+}
+
+input#name {
+  height: 20px;
+  padding: 6px;
+  width: 95%;
+}
+
+input#score {
+  height: 20px;
+  width: 95%;
+  padding: 6px;
+}
+
+h3 {
+  padding: 2px;
+}
+
+button#submit {
+  height: 100%;
+  padding: 8px;
+  font-size: 14px;
+  background-color: #2e5c5d;
+  font-weight: 800;
+  color: white;
+  border-radius: 4px;
+  align-self: flex-end;
 }
