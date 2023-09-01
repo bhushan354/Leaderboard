@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <h3><b>To Do List</b></h3>
+  <h3><b>Leaderboard</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -19,7 +19,7 @@
   - [📝 License ](#-license-)
 
 
-**[To Do List]** tasks adds/removes books to the list.<br />
+**[Leaderboard App]**adds/removes scores to the list.<br />
 
 ## 🛠 Built With <a name="built-with"></a>
 
