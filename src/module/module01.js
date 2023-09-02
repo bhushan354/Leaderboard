@@ -17,7 +17,7 @@ const addPlayer = async (name, score) => {
     method: 'POST',
     body: JSON.stringify({
       user: name,
-      score: score,
+      score,
     }),
     headers: {
       'Content-Type': 'application/json; charset=UTF-8',

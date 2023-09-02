@@ -6,20 +6,20 @@ import {
 
 import {
   updateScores,
-    blankInut,
+  blankInut,
 } from './module/module02.js';
 
 document.querySelector('.refresh-btn').addEventListener('click', (e) => {
   e.preventDefault();
-  updateScores(); 
+  updateScores();
 });
 
 document.getElementById('submit').addEventListener('click', (e) => {
   e.preventDefault();
   const name = document.querySelector('.typeName').value;
   const score = document.querySelector('.typeScore').value;
-  addPlayer(name, score); 
-  blankInut(); 
+  addPlayer(name, score);
+  blankInut();
 });
 
 newGame();
