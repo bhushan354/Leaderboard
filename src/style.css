@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  justify-content: center;
-  align-items: center;
 }
 
 h1.heading {
-  width: 80%;
-  font-size: 45px;
+  width: 100%;
+  color: blueviolet;
+  display: flex;
+  justify-content: center;
+  font-size: 56px;
 }
 
 .mainContainer {
@@ -47,14 +48,15 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 2vw;
-  height: 40vw;
-  width: 76%;
+  height: 40vh;
+  width: 100%;
 }
 
 .inputContainer {
   height: 85%;
   width: 25%;
+  background-color: brown;
+  border-radius: 10px;
 }
 
 .outputDisplay {
@@ -62,12 +64,12 @@ li {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 65%;
+  width: 30%;
 }
 
 .ListDisplay {
   height: 75%;
-  width: 98%;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -95,20 +97,27 @@ button.refresh-btn {
   width: 100%;
 }
 
-input#name {
-  height: 20px;
-  padding: 6px;
+.typeName {
+  height: 26px;
+  padding: 5px;
   width: 95%;
 }
 
-input#score {
-  height: 20px;
+.typeScore {
+  height: 26px;
   width: 95%;
-  padding: 6px;
+  padding: 5px;
+}
+
+h2 {
+  font-size: 36px;
+  color: cornflowerblue;
 }
 
 h3 {
   padding: 2px;
+  font-size: 36px;
+  color: cornflowerblue;
 }
 
 button#submit {
@@ -120,4 +129,37 @@ button#submit {
   color: white;
   border-radius: 4px;
   align-self: flex-end;
+}
+
+@media (max-width: 499px) {
+  .subContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2vw;
+    height: 100%;
+    width: 100%;
+  }
+
+  .inputContainer {
+    height: 90%;
+    width: 85%;
+  }
+
+  .outputDisplay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 85%;
+  }
+
+  h1.heading {
+    width: 100%;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
+  }
 }
