@@ -1,34 +1,22 @@
 import './style.css';
-import { addScore, getScores } from './module/module.js';
+import {
+  newGame,
+  postPlayer,
+  loadScores,
+  clearFields,
+} from './module/module01.js';
 
-const scoresList = document.getElementById('scoresList');
-const nameInput = document.getElementById('name');
-const scoreInput = document.getElementById('score');
-const submitButton = document.getElementById('submit');
-const refreshButton = document.querySelector('.refresh-btn');
-function updateScoresList() {
-  const scores = getScores();
-  scoresList.innerHTML = '';
-
-  scores.forEach((scoreObj) => {
-    const li = document.createElement('li');
-    li.textContent = `${scoreObj.name}: ${scoreObj.score}`;
-    scoresList.appendChild(li);
-  });
-}
-
-submitButton.addEventListener('click', () => {
-  const name = nameInput.value;
-  const score = parseInt(scoreInput.value, 10);
-
-  if (name && score) {
-    addScore(name, score);
-    nameInput.value = '';
-    scoreInput.value = '';
-    updateScoresList();
-  }
+document.querySelector('.refresh-btn').addEventListener('click', (e) => {
+  e.preventDefault();
+  loadScores(); 
 });
 
-refreshButton.addEventListener('click', updateScoresList);
+document.getElementById('submit').addEventListener('click', (e) => {
+  e.preventDefault();
+  const name = document.querySelector('.typeName').value;
+  const score = document.querySelector('.typeScore').value;
+  postPlayer(name, score); 
+  clearFields(); 
+});
 
-updateScoresList();
+newGame();
